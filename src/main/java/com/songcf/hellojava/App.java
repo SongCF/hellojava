@@ -19,15 +19,16 @@ public class App
         //System.out.println(System.getProperty("java.library.path"));
 
 
+        System.out.println("\n=============================================");
+        System.out.println("test begin...");
+        System.out.println("=============================================\n");
+
+
         // init
-        System.out.println("=============================================");
-        System.out.println("initialize test");
-        System.out.println("=============================================");
         Init.test();
 
 
 
-
-        System.out.println("End!");
+        System.out.println("\ntest end!");
     }
 }

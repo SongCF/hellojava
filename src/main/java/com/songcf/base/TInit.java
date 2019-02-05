@@ -11,7 +11,7 @@ class ObjA {
     }
 }
 
-public class Init {
+public class TInit {
     public static void test () {
         System.out.println("\nInitOrder begin...");
         InitOrder.test();

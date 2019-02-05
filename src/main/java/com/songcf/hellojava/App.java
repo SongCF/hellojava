@@ -1,6 +1,8 @@
 package com.songcf.hellojava;
 
-import com.songcf.base.Init;
+import com.songcf.base.TInit;
+import com.songcf.container.TCollection;
+import com.songcf.exception.TException;
 
 import java.util.Date;
 
@@ -25,8 +27,12 @@ public class App
 
 
         // init
-        Init.test();
+        TInit.test();
+        //container
+        TCollection.test();
 
+        //exception
+        TException.test();
 
 
         System.out.println("\ntest end!");

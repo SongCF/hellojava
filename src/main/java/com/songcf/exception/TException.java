@@ -29,7 +29,26 @@ public class TException {
             this.throwRuntimeException();
         } catch (Exception e) {
             e.printStackTrace(System.out);
+        }finally {
+            System.out.println("test finally 1");
         }
+
+        //not supported
+//        try {
+//            this.throwException();
+//        } finally {
+//            System.out.println("test finally last exception");
+//        }
+
+        try {
+            return;
+        }catch (Exception e) {
+            e.printStackTrace(System.out);
+        } finally { //finally -- 无论try中是否抛出异常都会执行，即使return也会执行。
+            System.out.println("exec finally by try return!");
+        }
+
+        System.out.println("前面return了，这里不会打印");
 
     }
 
@@ -38,19 +57,6 @@ public class TException {
     }
 
     protected void throwRuntimeException() /* throws SomeRuntimeException */ { //RuntimeException 可以不用申明
-        throw new SomeRuntimeException();
+        throw new RuntimeException();
     }
-}
-
-
-class SomeException extends Exception{
-    SomeException(String desc) {
-        super(desc);
-    }
-
-}
-
-//runtime exception可以不用throws申明
-class SomeRuntimeException extends RuntimeException {
-
 }

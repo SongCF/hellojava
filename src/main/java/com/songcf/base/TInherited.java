@@ -17,6 +17,12 @@ public class TInherited {
         a1.test();
         a1.test(1);
         a1.test("I am Cheff");
+
+        //
+        Interface1 i1 = new InterfaceChild1();
+        i1.test1();
+        Interface2 i2 = (Interface2)i1;
+        i2.test2();
     }
 }
 
@@ -85,5 +91,18 @@ class AbsChild1 extends Abs{
 }
 
 interface Interface1 {
+    public void test1();
+}
 
+interface Interface2 {
+    public void test2();
+}
+
+class InterfaceChild1 extends Base implements Interface1, Interface2 {
+    public void test1() {
+        System.out.println("InterfaceChild1:test1");
+    }
+    public void test2() {
+        System.out.println("InterfaceChild1:test2");
+    }
 }

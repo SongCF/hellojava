@@ -19,7 +19,7 @@ public class TException {
     }
 
     protected void tryCatch() {
-        try { //如果这里没有捕获，那么tryCatch函数也需要异常声明
+        try { //FIXME 如果这里没有捕获，那么tryCatch函数也需要异常声明
             this.throwException();
         } catch (Exception e) {
             e.printStackTrace(System.out);
@@ -33,7 +33,7 @@ public class TException {
             System.out.println("test finally 1");
         }
 
-        //not supported
+        //FIXME not supported no catch
 //        try {
 //            this.throwException();
 //        } finally {
@@ -44,7 +44,7 @@ public class TException {
             return;
         }catch (Exception e) {
             e.printStackTrace(System.out);
-        } finally { //finally -- 无论try中是否抛出异常都会执行，即使return也会执行。
+        } finally { //FIXME finally -- 无论try中是否抛出异常都会执行，即使return也会执行。
             System.out.println("exec finally by try return!");
         }
 
@@ -56,7 +56,7 @@ public class TException {
         throw new SomeException("test SomeException");
     }
 
-    protected void throwRuntimeException() /* throws SomeRuntimeException */ { //RuntimeException 可以不用申明
+    protected void throwRuntimeException() /* throws SomeRuntimeException */ { //FIXME RuntimeException 可以不用申明
         throw new RuntimeException();
     }
 }

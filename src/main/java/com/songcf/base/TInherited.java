@@ -57,7 +57,7 @@ class BaseChild1 extends Base {
         System.out.println("BaseChild1 constructor1");
     }
     BaseChild1(String arg) {
-        super(arg); //如果没有调用，将会调用默认的父类构造器
+        super(arg); //FIXME 如果没有调用，将会调用默认的父类构造器
         System.out.println("BaseChild1 constructor2 arg");
     }
 
@@ -65,7 +65,7 @@ class BaseChild1 extends Base {
         System.out.println("BaseChild1:test");
     }
 
-    public void testThrow() throws SomeException { //子类的throw必须是父类throw的子集
+    public void testThrow() throws SomeException { //FIXME 子类的throw必须是父类throw的子集
         System.out.println("BaseChild1:testThrow");
         throw new SomeException("BaseChild1:testThrow");
     }

@@ -4,6 +4,7 @@ import com.songcf.base.TInherited;
 import com.songcf.base.TInit;
 import com.songcf.container.TCollection;
 import com.songcf.exception.TException;
+import com.songcf.string.TString;
 
 import java.util.Date;
 
@@ -35,6 +36,9 @@ public class App
 
         //exception
         TException.test();
+
+        //string
+        new TString().test();
 
 
         System.out.println("\ntest end!");

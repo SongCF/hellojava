@@ -8,6 +8,7 @@ public class TString extends TTest {
     }
     public void test() {
         this.testStringBuilder();
+        this.testPrint();
     }
 
     protected void testStringBuilder() {
@@ -19,5 +20,16 @@ public class TString extends TTest {
         b.append("=");
         b.append(1+'2');
         System.out.println(b.toString());
+    }
+
+    protected void testPrint() {
+        System.out.println("---testPrint");
+        Integer i = 10;
+        String s = "string";
+        //println
+        System.out.println("i:" + i + ", s:" + s);
+        //printf, format
+        System.out.printf("i:%d, s:%s", i, s);
+        System.out.format("i:%d, s:%s", i, s);
     }
 }

@@ -11,6 +11,7 @@ public class TInherited {
         Base b2 = new BaseChild1("b2");
         (new Base()).test();
         b1.test();
+        System.out.println("really class = "+b1.getClass().getName());
 
         //
         Abs a1 = new AbsChild1();
@@ -39,7 +40,7 @@ class Base {
     }
 
     public void test() {
-        System.out.println("Base:test");
+        System.out.println("Base:test, class="+this.getClass().getName());
     }
 
     public void testThrow() throws SomeException {
@@ -62,7 +63,7 @@ class BaseChild1 extends Base {
     }
 
     public void test() {
-        System.out.println("BaseChild1:test");
+        System.out.println("BaseChild1:test, class="+this.getClass().getName());
     }
 
     public void testThrow() throws SomeException { //FIXME 子类的throw必须是父类throw的子集
@@ -83,10 +84,10 @@ abstract class Abs {
 
 class AbsChild1 extends Abs{
     public void test() {
-        System.out.println("AbsChild1:test");
+        System.out.println("AbsChild1:test, class="+this.getClass().getName());
     }
     public void test(Integer i) {
-        System.out.println("AbsChild1:test Integer arg " + i);
+        System.out.println("AbsChild1:test Integer arg " + i+ ", class="+this.getClass().getName());
     }
 }
 

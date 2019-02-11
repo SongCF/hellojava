@@ -23,13 +23,14 @@ public class TString extends TTest {
     }
 
     protected void testPrint() {
+        Integer.class.getFields();
         System.out.println("---testPrint");
         Integer i = 10;
         String s = "string";
         //println
-        System.out.println("i:" + i + ", s:" + s);
+        System.out.println("println i:" + i + ", s:" + s);
         //printf, format
-        System.out.printf("i:%d, s:%s", i, s);
-        System.out.format("i:%d, s:%s", i, s);
+        System.out.printf("printf i:%d, s:%s\n", i, s);
+        System.out.format("format i:%d, s:%s\n", i, s);
     }
 }

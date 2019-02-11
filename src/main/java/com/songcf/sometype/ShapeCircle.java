@@ -7,4 +7,7 @@ public class ShapeCircle implements Shape {
     public void draw() {
         Printer.println("ShapeCircle:draw");
     }
+    public void shapeCircle() {
+        Printer.println("ShapeCircle:shapeCircle [special method]");
+    }
 }

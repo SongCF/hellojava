@@ -3,7 +3,6 @@ package com.songcf.runtime;
 import com.songcf.sometype.Exit;
 import com.songcf.sometype.HiddenObj;
 import com.songcf.sometype.Printer;
-import com.songcf.sometype.ShapeCircle;
 import com.songcf.test.TTest;
 import java.lang.reflect.Method;
 

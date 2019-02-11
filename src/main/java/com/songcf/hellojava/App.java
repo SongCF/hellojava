@@ -4,7 +4,7 @@ import com.songcf.base.TInherited;
 import com.songcf.base.TInit;
 import com.songcf.container.TCollection;
 import com.songcf.exception.TException;
-import com.songcf.runtime.TProxy;
+import com.songcf.runtime.TDynamicProxy;
 import com.songcf.runtime.TReflect;
 import com.songcf.runtime.TType;
 import com.songcf.string.TString;
@@ -17,8 +17,11 @@ import java.util.Date;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
+        doTest();
+    }
+
+    public static void doTest() {
         System.out.println(new Date());
         System.out.println( "Hello World!" );
         //System.getProperties().list(System.out);
@@ -45,7 +48,7 @@ public class App
         //RTTI
         new TType().test();
         new TReflect().test();
-        new TProxy().test();
+        new TDynamicProxy().test();
 
 
         System.out.println("\ntest end!");

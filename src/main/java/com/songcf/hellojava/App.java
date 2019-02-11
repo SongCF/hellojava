@@ -4,6 +4,9 @@ import com.songcf.base.TInherited;
 import com.songcf.base.TInit;
 import com.songcf.container.TCollection;
 import com.songcf.exception.TException;
+import com.songcf.runtime.TProxy;
+import com.songcf.runtime.TReflect;
+import com.songcf.runtime.TType;
 import com.songcf.string.TString;
 
 import java.util.Date;
@@ -39,6 +42,10 @@ public class App
 
         //string
         new TString().test();
+        //RTTI
+        new TType().test();
+        new TReflect().test();
+        new TProxy().test();
 
 
         System.out.println("\ntest end!");

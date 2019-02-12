@@ -3,7 +3,6 @@ package com.songcf.runtime;
 import com.songcf.sometype.Printer;
 import com.songcf.sometype.Shape;
 import com.songcf.sometype.ShapeCircle;
-import com.songcf.sometype.ShapeSquare;
 import com.songcf.test.TTest;
 
 import java.lang.reflect.InvocationHandler;
@@ -18,6 +17,8 @@ public class TDynamicProxy extends TTest {
     public void test() {
         Shape circle = new ShapeCircle();
         consumer(circle);
+
+        //动态代理，不用每个要代理的接口都去实现一次
         Shape proxy = (Shape) Proxy.newProxyInstance(
                 Shape.class.getClassLoader(),
                 new Class<?>[] {Shape.class}, //Shape.class.getInterfaces(), TODO 为什么这个不行？

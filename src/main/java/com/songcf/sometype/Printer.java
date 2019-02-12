@@ -8,6 +8,13 @@ public class Printer {
     public static void println(Object str) {
         System.out.println(str);
     }
+    public static void printf(String str, Object... obj) {
+        System.out.printf(str, obj);
+    }
+
+    public static void printDesc(String desc) {
+        println("------test info:"+desc+"------");
+    }
 
     public static void printMethodBegin(String methodName) {
         println("------testMethod:"+methodName+"------");

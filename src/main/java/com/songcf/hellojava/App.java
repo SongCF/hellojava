@@ -4,7 +4,7 @@ import com.songcf.base.TInherited;
 import com.songcf.base.TInit;
 import com.songcf.container.TCollection;
 import com.songcf.exception.TException;
-import com.songcf.generic.GenericTest;
+import com.songcf.generic.TGeneric;
 import com.songcf.runtime.TDynamicProxy;
 import com.songcf.runtime.TReflect;
 import com.songcf.runtime.TType;
@@ -51,7 +51,7 @@ public class App
         new TReflect().test();
         new TDynamicProxy().test();
         //generic
-        new GenericTest().test();
+        new TGeneric().test();
 
 
         System.out.println("\ntest end!");

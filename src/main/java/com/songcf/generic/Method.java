@@ -5,9 +5,9 @@ import com.songcf.sometype.Printer;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Method extends Class {
-    public <T> void genericMethod(T t) {
-        Printer.println(Method.class.getName() + ": generic Method genericMethod, t="+t.getClass().getName());
+public class Method<T> extends Class<T> {
+    public <U> void genericMethod(U u) {
+        Printer.println(Method.class.getName() + ": generic Method genericMethod, u="+u.getClass().getName());
     }
 
     //返回值会做类型推到

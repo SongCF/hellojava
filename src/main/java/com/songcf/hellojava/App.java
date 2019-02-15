@@ -3,6 +3,7 @@ package com.songcf.hellojava;
 import com.songcf.base.TInherited;
 import com.songcf.base.TInit;
 import com.songcf.container.TCollection;
+import com.songcf.enums.TEnum;
 import com.songcf.exception.TException;
 import com.songcf.generic.TGeneric;
 import com.songcf.runtime.TDynamicProxy;
@@ -52,6 +53,8 @@ public class App
         new TDynamicProxy().test();
         //generic
         new TGeneric().test();
+        //enum
+        new TEnum().test();
 
 
         System.out.println("\ntest end!");

@@ -19,7 +19,7 @@ public class TReflect extends TTest {
     }
 
     public void showMethods(String className) {
-        Printer.printMethodBegin("showMethods");
+        Printer.printDesc("showMethods");
         try {
             Class<?> c = Class.forName(className);
             Method[] mL = c.getMethods();
@@ -34,7 +34,7 @@ public class TReflect extends TTest {
     }
 
     public static void callHiddenMethod(Object obj, String methodName) {
-        Printer.printMethodBegin("callHiddenMethod");
+        Printer.printDesc("callHiddenMethod");
         try {
             Method m = obj.getClass().getDeclaredMethod(methodName);
             m.setAccessible(true);

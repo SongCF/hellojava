@@ -16,10 +16,6 @@ public class Printer {
         println("------test info:"+desc+"------");
     }
 
-    public static void printMethodBegin(String methodName) {
-        println("------testMethod:"+methodName+"------");
-    }
-
     public static void print2File(String data) {
         try{
             File file = new File("crash.log");

@@ -20,7 +20,7 @@ public class TType extends TTest {
 
         //class.isInstance
         System.out.println("Pet.class.isInstance(cat) : " + Pet.class.isInstance(realCat));
-        System.out.println("Pet.class==petFromCat.getClass()) : "+(Pet.class==petFromCat.getClass()));//FIXME 虽然能赋值但是class不行等哦
+        System.out.println("Pet.class==petFromCat.getClass()) : "+(Pet.class==petFromCat.getClass()));//FIXME 虽然能赋值但是class不相等
 
         System.out.println("Cat.class.isInstance(petFromCat) : "+Cat.class.isInstance(petFromCat));
         System.out.println("Cat.class==petFromCat.getClass()) : "+(Cat.class==petFromCat.getClass()));

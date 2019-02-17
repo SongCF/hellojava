@@ -1,8 +1,10 @@
 package com.songcf.hellojava;
 
+import com.songcf.annotation.TAnnotation;
 import com.songcf.base.TInherited;
 import com.songcf.base.TInit;
 import com.songcf.container.TCollection;
+import com.songcf.container.TContainer;
 import com.songcf.enums.TEnum;
 import com.songcf.exception.TException;
 import com.songcf.generic.TGeneric;
@@ -40,7 +42,7 @@ public class App
         //inherited
         TInherited.test();
         //container
-        TCollection.test();
+        new TContainer().test();
 
         //exception
         TException.test();
@@ -55,6 +57,9 @@ public class App
         new TGeneric().test();
         //enum
         new TEnum().test();
+
+        //annotation
+        new TAnnotation().test();
 
 
         System.out.println("\ntest end!");

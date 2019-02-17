@@ -27,7 +27,7 @@ public class TDynamicProxy extends TTest {
     }
 
     protected void consumer(Shape s) {
-        Printer.printMethodBegin("consumer");
+        Printer.printDesc("consumer");
         s.name();
         s.draw();
 
